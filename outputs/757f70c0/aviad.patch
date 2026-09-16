@@ -1,0 +1,37 @@
+--- a/spiral-fitting/find_inconsistent_windings.py
++++ b/spiral-fitting/find_inconsistent_windings.py
+@@ -180,14 +180,23 @@
+     Returns (fit_config, scroll, paths, model_z_begin, model_z_end); the model
+     z-range shapes the transform's flow field independently of the filtering
+     z-range."""
+-    from fit_session import PclInputSpec, ScrollSpec, SpiralInputPaths
++    from fit_session import (PclInputSpec, ScrollSpec, SpiralInputPaths,
++                             effective_pcl_role, pcl_role_toggle_key)
+ 
+     cfg = fs.Config().as_dict()
+     cfg.update(checkpoint['cfg'])
++    pcl_specs = tuple(PclInputSpec(path=str(path), role=None) for path in pcl_paths)
+     # This tool IS the patch graph — a checkpoint trained supervision-free
+     # (disable_patches, e.g. the 2026-07-17 normals-only baseline) must not
+     # stop the loaders from reading the patches it wants to analyse.
+     cfg['input_disable_patches'] = False
++    # Explicit diagnostic inputs are independent of the checkpoint's training
++    # selection. Absolute PCLs also require the selected verified patches.
++    cfg['input_use_verified_patches'] = True
++    for spec in pcl_specs:
++        cfg[pcl_role_toggle_key(effective_pcl_role(spec.role, spec.path))] = True
++    if fibers_path:
++        cfg['input_use_fibers'] = True
+     # We compute no shell losses; zero their weights so the context's
+     # shell_losses_enabled() gate stops load_host_inputs() from loading the
+     # shell (replacing the old fs.shell_losses_enabled = lambda: False
+@@ -214,8 +223,7 @@
+     # unless a fibers dir is passed.
+     paths = SpiralInputPaths(
+         umbilicus=umbilicus_path,
+-        pcls=tuple(PclInputSpec(path=str(path), role=None)
+-                   for path in pcl_paths),
++        pcls=pcl_specs,
+         fibers=fibers_path or '',
+         verified_patches=patches_dir,
+     )

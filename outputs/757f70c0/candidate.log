@@ -1,0 +1,39 @@
+using umbilicus D:\Competition\Vesuvius progress prizes\_repro1626\bundle\inputs\umbilicus.json
+loading checkpoint D:\Competition\Vesuvius progress prizes\_repro1626\bundle\sealed-baseline-seed17.ckpt
+checkpoint (model) z-range: [10500, 11500); filtering z-range: [10500, 11500)
+loading + z-filtering patches and point-collections
+loaded and filtered 2/2 verified patches (0.0s)
+ loaded 2 patches
+ loaded 0 unverified patches
+Loaded point collection with 6 collections (59 points)
+Loaded point collection with 300 collections (2173 points)
+Loaded point collection with 154 collections (5413 points)
+linking points to patches with vc_spiral.surface_index (2 patches)
+linking points to patches:   0%|          | 0/460 [00:00<?, ?it/s]linking points to patches: 100%|##########| 460/460 [00:00<00:00, 652920.42it/s]
+D:\Competition\Vesuvius progress prizes\_repro1626\candidate\spiral-fitting\find_inconsistent_windings.py:243: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  ).to(device)
+WARNING: winding_is_absolute pcl 0 ('correction1') has 48 of 48 points not attached to any patch; dropping the unattached points
+WARNING: winding_is_absolute pcl 1 ('col1') has 1 of 1 points not attached to any patch; dropping the unattached points
+WARNING: winding_is_absolute pcl 2 ('col2') has 1 of 1 points not attached to any patch; dropping the unattached points
+WARNING: winding_is_absolute pcl 4 ('col4') has 8 of 8 points not attached to any patch; dropping the unattached points
+dropped 289 unattached pcls with <2 points in z-roi
+fiber links: 0 resolved
+pcls: 25 cross-patch, 85 unattached
+  cross-patch sampling groups: abs_winding: 6, relative_windings: 10, same_windings: 9
+  unattached sampling groups: relative_windings: 60, same_windings: 25
+fitting 2 patches
+patch atlas: 2.7 MB
+compact patch topology: 100,365 quads, 0.00 GiB host ()
+rebuilding spiral transform from checkpoint
+dr_per_winding = 15.8060
+patch 0000_mid_band_final: grid (112, 1731); seed at grid-centre vertex ij=[55.0, 865.0]; model raw winding = 46.347 (rounded to 46)
+6 absolute, 10 relative, 9 neither (fiber/same-wind) pcl(s); absolute anchor 1 patch(es); relative+neither -> 0 cross-patch edge(s) over 0 patch(es)
+  [0 hop(s)] abs pcl 5 ('col5') point 97 on patch 0000_mid_band_final: annotation=37 -> expected seed winding=39.000 (round 39)
+
+reached 1 patch(es); 1 vote(s) (1 direct, 0 long-range) across winding number(s): 39
+checked 0 non-tree relative-edge loop(s): 0 with nonzero winding holonomy
+
+disconnected rel-edge subgraphs (seed's component has 0 patch(es)):
+  all relative-edge patches are connected to the seed (none disconnected)
+
+wrote D:\Competition\Vesuvius progress prizes\_repro1626\villa-pcl-gpu-comparison\candidate.json

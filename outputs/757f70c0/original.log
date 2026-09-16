@@ -1,0 +1,28 @@
+D:\Competition\Vesuvius progress prizes\_repro1626\original\spiral-fitting\find_inconsistent_windings.py:235: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  ).to(device)
+using umbilicus D:\Competition\Vesuvius progress prizes\_repro1626\bundle\inputs\umbilicus.json
+loading checkpoint D:\Competition\Vesuvius progress prizes\_repro1626\bundle\sealed-baseline-seed17.ckpt
+checkpoint (model) z-range: [10500, 11500); filtering z-range: [10500, 11500)
+loading + z-filtering patches and point-collections
+loaded and filtered 2/2 verified patches (0.0s)
+ loaded 2 patches
+ loaded 0 unverified patches
+fiber links: 0 resolved
+pcls: 0 cross-patch, 0 unattached
+  cross-patch sampling groups: 
+  unattached sampling groups: 
+fitting 2 patches
+patch atlas: 2.7 MB
+compact patch topology: 100,365 quads, 0.00 GiB host ()
+rebuilding spiral transform from checkpoint
+dr_per_winding = 15.8060
+patch 0000_mid_band_final: grid (112, 1731); seed at grid-centre vertex ij=[55.0, 865.0]; model raw winding = 46.347 (rounded to 46)
+0 absolute, 0 relative, 0 neither (fiber/same-wind) pcl(s); absolute anchor 0 patch(es); relative+neither -> 0 cross-patch edge(s) over 0 patch(es)
+
+reached 1 patch(es); 0 vote(s) (0 direct, 0 long-range) across winding number(s): (none)
+checked 0 non-tree relative-edge loop(s): 0 with nonzero winding holonomy
+
+disconnected rel-edge subgraphs (seed's component has 0 patch(es)):
+  all relative-edge patches are connected to the seed (none disconnected)
+
+wrote D:\Competition\Vesuvius progress prizes\_repro1626\villa-pcl-gpu-comparison\original.json

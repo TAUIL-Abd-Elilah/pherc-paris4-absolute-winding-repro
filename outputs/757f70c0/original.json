@@ -1,0 +1,74 @@
+{
+  "checkpoint": "D:\\Competition\\Vesuvius progress prizes\\_repro1626\\bundle\\sealed-baseline-seed17.ckpt",
+  "patches_dir": "D:\\Competition\\Vesuvius progress prizes\\_repro1626\\bundle\\inputs\\patches",
+  "umbilicus": "D:\\Competition\\Vesuvius progress prizes\\_repro1626\\bundle\\inputs\\umbilicus.json",
+  "patch_id": "0000_mid_band_final",
+  "pcl_paths": [
+    "D:\\Competition\\Vesuvius progress prizes\\_repro1626\\bundle\\inputs\\pcl\\abs_winding.json",
+    "D:\\Competition\\Vesuvius progress prizes\\_repro1626\\bundle\\inputs\\pcl\\relative_windings.json",
+    "D:\\Competition\\Vesuvius progress prizes\\_repro1626\\bundle\\inputs\\pcl\\same_windings.json"
+  ],
+  "model_z_range": [
+    10500,
+    11500
+  ],
+  "filter_z_range": [
+    10500,
+    11500
+  ],
+  "step_size": 1.0,
+  "medial_weight": 4.0,
+  "max_hops": 0,
+  "detect_loops": true,
+  "max_subgraphs": 20,
+  "top_patches_per_subgraph": 10,
+  "seed": {
+    "ij": [
+      55.0,
+      865.0
+    ],
+    "zyx": [
+      10936.4521484375,
+      2740.048583984375,
+      4185.58837890625
+    ],
+    "xyz": [
+      4185.58837890625,
+      2740.048583984375,
+      10936.4521484375
+    ]
+  },
+  "dr_per_winding": 15.806002616882324,
+  "model_raw_winding_at_seed": 46,
+  "num_absolute_pcls": 0,
+  "num_relative_pcls": 0,
+  "num_neither_pcls": 0,
+  "point_collections": [],
+  "num_relative_cross_patch_edges": 0,
+  "num_patches_reached": 1,
+  "num_direct_votes": 0,
+  "num_long_range_votes": 0,
+  "votes_agree": true,
+  "num_loops_checked": 0,
+  "num_inconsistent_loops": 0,
+  "num_loops_unmeasurable": 0,
+  "votes": {},
+  "loops": [],
+  "tree": {
+    "nodes": {
+      "0000_mid_band_final": {
+        "depth": 0,
+        "acc": 0
+      }
+    },
+    "edges": {}
+  },
+  "loop_cycles": [],
+  "min_edge_fix": null,
+  "disconnected_subgraphs": {
+    "num_components_total": 0,
+    "seed_component_num_patches": 0,
+    "num_disconnected_components": 0,
+    "components": []
+  }
+}
