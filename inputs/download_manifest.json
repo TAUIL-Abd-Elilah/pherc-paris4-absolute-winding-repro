@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source": "https://dl.ash2txt.org/datasets/spiral_datasets/PHercParis4",
+  "started_unix": 1787817454.2596514,
+  "completed_unix": 1787817646.1274004,
+  "patches": {
+    "patches": 89237,
+    "files": 357440,
+    "bytes": 3442931831,
+    "band_seed_patches": 84316,
+    "legacy_patches": 4921,
+    "index_sha256": "29f975b1f1615bf7b11e58ec88c77d17c3d7603c4f70e43175e1eb31d65159c2"
+  },
+  "eval_fibers": {
+    "files": 213,
+    "bytes": 73195829
+  }
+}

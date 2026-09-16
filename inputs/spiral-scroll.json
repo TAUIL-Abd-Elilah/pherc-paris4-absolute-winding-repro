@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "name": "s1",
+  "voxel_size_um": 9.6,
+  "spiral_outward_sense": "CW",
+  "umbilicus": {
+    "coordinate_scale": 1.0
+  },
+  "lasagna_scale": 4,
+  "provenance_note": "Locally materialized for the public PHercParis4 sampler A/B from villa's historical production defaults; not served upstream."
+}

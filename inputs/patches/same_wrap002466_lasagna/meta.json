@@ -1,0 +1,1754 @@
+{
+    "area_vx2": 1002343.75,
+    "base_shape_zyx": [
+        18946,
+        8174,
+        8174
+    ],
+    "bbox": [
+        [
+            -0.25,
+            -0.250030517578125,
+            -0.25
+        ],
+        [
+            5619.1240234375,
+            4422.67626953125,
+            11174.263671875
+        ]
+    ],
+    "extra_channels": [
+        {
+            "dtype": "float32",
+            "file": "flow_gate_local_contrast.tif",
+            "name": "flow_gate_local_contrast",
+            "range": [
+                0.0,
+                1.0
+            ],
+            "source": "pred_dt_flow_gate.local_contrast",
+            "source_config": {
+                "backtrack_distance": 50.0,
+                "gate_factor": 1.0,
+                "grid_step": 4,
+                "local_boost": 0.5
+            }
+        },
+        {
+            "dtype": "float32",
+            "file": "flow_gate_component_normalized.tif",
+            "name": "flow_gate_component_normalized",
+            "range": [
+                0.0,
+                1.0
+            ],
+            "source": "pred_dt_flow_gate.component_normalized",
+            "source_config": {
+                "backtrack_distance": 50.0,
+                "gate_factor": 1.0,
+                "grid_step": 4,
+                "local_boost": 0.5
+            }
+        }
+    ],
+    "fit_config": {
+        "_corr_point_roi_init_": {
+            "effective_seed": [
+                21878.45703125,
+                16191.1982421875,
+                43562.51171875
+            ],
+            "final_anchor_h": 246.99305614829063,
+            "final_anchor_w": 61.72555983066559,
+            "final_shell_id": "shell_0000.tifxyz",
+            "final_trim_bottom": 19,
+            "final_trim_top": 13,
+            "init_margin_grid_points": 80,
+            "initial_seed": [
+                21943.9296875,
+                16284.0791015625,
+                43562.51171875
+            ],
+            "initial_shell_id": "shell_0000.tifxyz",
+            "initial_skipped_point_count": 0,
+            "initial_skipped_reasons": {},
+            "initial_trim_bottom": 19,
+            "initial_trim_top": 13,
+            "initial_usable_point_count": 48,
+            "mode": "corr-point-roi",
+            "model_h": 8838.445281982422,
+            "model_w": 9255.654525756836,
+            "model_w_unit": "voxels",
+            "output_radius_grid_points": 20,
+            "parsed_point_count": 48,
+            "projected_h_span_grid": 16.768905639648438,
+            "projected_h_span_vx": 838.4452819824219,
+            "projected_points": [
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 8.919544804303513,
+                    "h": 245.9517059326172,
+                    "point_id": 110057,
+                    "row_index": 0,
+                    "w": 52.86701202392578
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 8.37521551279497,
+                    "h": 245.99200439453125,
+                    "point_id": 110058,
+                    "row_index": 1,
+                    "w": 53.41038513183594
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 7.823581830334461,
+                    "h": 246.04287719726563,
+                    "point_id": 110059,
+                    "row_index": 2,
+                    "w": 53.95989227294922
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 7.273696456998631,
+                    "h": 246.09259033203125,
+                    "point_id": 110060,
+                    "row_index": 3,
+                    "w": 54.507816314697266
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 6.727129901069325,
+                    "h": 246.15428161621094,
+                    "point_id": 110061,
+                    "row_index": 4,
+                    "w": 55.050926208496094
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 6.177216417366364,
+                    "h": 246.22642517089844,
+                    "point_id": 110062,
+                    "row_index": 5,
+                    "w": 55.596099853515625
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 5.619332811683613,
+                    "h": 246.29747009277344,
+                    "point_id": 110063,
+                    "row_index": 6,
+                    "w": 56.149444580078125
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 5.066591593867635,
+                    "h": 246.35975646972656,
+                    "point_id": 110064,
+                    "row_index": 7,
+                    "w": 56.69870376586914
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 4.516855045663245,
+                    "h": 246.42196655273438,
+                    "point_id": 110065,
+                    "row_index": 8,
+                    "w": 57.24495315551758
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 3.96389035746471,
+                    "h": 246.4875030517578,
+                    "point_id": 110066,
+                    "row_index": 9,
+                    "w": 57.79404067993164
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 3.404877471772225,
+                    "h": 246.60699462890625,
+                    "point_id": 110067,
+                    "row_index": 10,
+                    "w": 58.3426399230957
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 2.8486421664810098,
+                    "h": 246.61752319335938,
+                    "point_id": 110068,
+                    "row_index": 11,
+                    "w": 58.90177917480469
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 2.285480977300456,
+                    "h": 246.68641662597656,
+                    "point_id": 110069,
+                    "row_index": 12,
+                    "w": 59.46074295043945
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 1.7220806651824885,
+                    "h": 246.7538604736328,
+                    "point_id": 110070,
+                    "row_index": 13,
+                    "w": 60.020172119140625
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 1.1484050176557918,
+                    "h": 246.83267211914063,
+                    "point_id": 110071,
+                    "row_index": 14,
+                    "w": 60.588409423828125
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 0.571023101031828,
+                    "h": 246.91409301757813,
+                    "point_id": 110072,
+                    "row_index": 15,
+                    "w": 61.1600227355957
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 0.004011160492669745,
+                    "h": 246.99603271484375,
+                    "point_id": 110073,
+                    "row_index": 16,
+                    "w": 61.728248596191406
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 0.5702529530238927,
+                    "h": 247.0765380859375,
+                    "point_id": 110074,
+                    "row_index": 17,
+                    "w": 62.289669036865234
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 1.1456828460420754,
+                    "h": 247.15480041503906,
+                    "point_id": 110075,
+                    "row_index": 18,
+                    "w": 62.85976791381836
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 1.7225087522854339,
+                    "h": 247.2375946044922,
+                    "point_id": 110076,
+                    "row_index": 19,
+                    "w": 63.43062210083008
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 2.2999058391485416,
+                    "h": 247.3142852783203,
+                    "point_id": 110077,
+                    "row_index": 20,
+                    "w": 64.00292205810547
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 2.873764784139826,
+                    "h": 247.38316345214844,
+                    "point_id": 110078,
+                    "row_index": 21,
+                    "w": 64.57272338867188
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 3.4395716587636738,
+                    "h": 247.4544219970703,
+                    "point_id": 110079,
+                    "row_index": 22,
+                    "w": 65.13404846191406
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 4.012801329846506,
+                    "h": 247.53627014160156,
+                    "point_id": 110080,
+                    "row_index": 23,
+                    "w": 65.70142364501953
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 4.600216792211707,
+                    "h": 247.61349487304688,
+                    "point_id": 110081,
+                    "row_index": 24,
+                    "w": 66.28374481201172
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 5.214650953151145,
+                    "h": 247.69227600097656,
+                    "point_id": 110082,
+                    "row_index": 25,
+                    "w": 66.89311981201172
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 5.8765982874589415,
+                    "h": 247.75518798828125,
+                    "point_id": 110083,
+                    "row_index": 26,
+                    "w": 67.55252838134766
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 2.0028103761445695,
+                    "h": 246.71998596191406,
+                    "point_id": 110084,
+                    "row_index": 27,
+                    "w": 63.70966720581055
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 7.135428549770224,
+                    "h": 247.9135284423828,
+                    "point_id": 110085,
+                    "row_index": 28,
+                    "w": 68.8013687133789
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 7.718422314418271,
+                    "h": 248.00828552246094,
+                    "point_id": 110086,
+                    "row_index": 29,
+                    "w": 69.37692260742188
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 2.148672674498095,
+                    "h": 245.23681640625,
+                    "point_id": 110087,
+                    "row_index": 30,
+                    "w": 60.48765182495117
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 1.8667224416305999,
+                    "h": 245.4794464111328,
+                    "point_id": 110088,
+                    "row_index": 31,
+                    "w": 60.63302230834961
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 9.09686274841967,
+                    "h": 243.1239776611328,
+                    "point_id": 110089,
+                    "row_index": 32,
+                    "w": 53.49250793457031
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 10.009987587573718,
+                    "h": 248.44297790527344,
+                    "point_id": 110090,
+                    "row_index": 33,
+                    "w": 71.6299819946289
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 10.593293825468681,
+                    "h": 248.54713439941406,
+                    "point_id": 110091,
+                    "row_index": 34,
+                    "w": 72.20423889160156
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 11.177168678465506,
+                    "h": 248.64634704589844,
+                    "point_id": 110092,
+                    "row_index": 35,
+                    "w": 72.77977752685547
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 11.740095777911623,
+                    "h": 248.71975708007813,
+                    "point_id": 110093,
+                    "row_index": 36,
+                    "w": 73.33798217773438
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 12.322873302039795,
+                    "h": 248.79074096679688,
+                    "point_id": 110094,
+                    "row_index": 37,
+                    "w": 73.9166030883789
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 12.897259652745664,
+                    "h": 248.86012268066406,
+                    "point_id": 110095,
+                    "row_index": 38,
+                    "w": 74.4869613647461
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 5.64784471479977,
+                    "h": 250.61221313476563,
+                    "point_id": 110096,
+                    "row_index": 39,
+                    "w": 66.06143951416016
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 7.128604954205683,
+                    "h": 242.62464904785156,
+                    "point_id": 110097,
+                    "row_index": 40,
+                    "w": 67.35885620117188
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 13.259849636785185,
+                    "h": 233.8433074951172,
+                    "point_id": 110098,
+                    "row_index": 41,
+                    "w": 60.020355224609375
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 12.873485933695168,
+                    "h": 243.36505126953125,
+                    "point_id": 110099,
+                    "row_index": 42,
+                    "w": 49.373870849609375
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 12.373583970561096,
+                    "h": 242.85118103027344,
+                    "point_id": 110100,
+                    "row_index": 43,
+                    "w": 50.06578063964844
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 7.901978445072277,
+                    "h": 243.2483367919922,
+                    "point_id": 110101,
+                    "row_index": 44,
+                    "w": 54.76723098754883
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": -1,
+                    "grid_distance_to_anchor": 4.7931338635577365,
+                    "h": 245.4652099609375,
+                    "point_id": 110102,
+                    "row_index": 45,
+                    "w": 57.18245315551758
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 6.379658939456585,
+                    "h": 248.025634765625,
+                    "point_id": 110103,
+                    "row_index": 46,
+                    "w": 55.43001937866211
+                },
+                {
+                    "collection_id": 2652,
+                    "direction_sign": 1,
+                    "grid_distance_to_anchor": 10.504398392774801,
+                    "h": 249.44943237304688,
+                    "point_id": 110104,
+                    "row_index": 47,
+                    "w": 51.51240158081055
+                }
+            ],
+            "projected_w_span_grid": 25.11309051513672,
+            "projected_w_span_vx": 1255.654525756836,
+            "projection_mode": "normal-line",
+            "skipped_point_count": 0,
+            "skipped_points": [],
+            "skipped_reasons": {},
+            "usable_point_count": 48,
+            "windings": 1
+        },
+        "args": {
+            "approval-inpaint": false,
+            "approval-inpaint-corr-spacing": null,
+            "approval-inpaint-output-mask": false,
+            "approval-inpaint-output-mask-dilate": 3,
+            "approval-inpaint-padding-frac": 0.25,
+            "approval-inpaint-tifxyz": null,
+            "corr-point-roi": true,
+            "corr-point-roi-init-margin": 80,
+            "corr-point-roi-output-radius": 20,
+            "crop": null,
+            "cuda-gridsample": 1,
+            "depth": 1,
+            "device": "cuda",
+            "downscale": 4.0,
+            "erode-valid-mask": 0,
+            "flatten-solver": "torch",
+            "init-mode": "shell-dir-crop",
+            "input": "/ephemeral/lasag_strip_outputs/.lasagna_point_strip_work/collection_2652/point_strip.lasagna.json",
+            "mesh-h": 32,
+            "mesh-step": 50,
+            "mesh-w": 32,
+            "model-h": 8838.445281982422,
+            "model-init": "seed",
+            "model-input": null,
+            "model-output": "/tmp/fit_reopt_zjo8vi7h/model_reopt.pt",
+            "model-w": 9255.654525756836,
+            "model-w-unit": "voxels",
+            "normal-mask-zero": 0,
+            "out-dir": null,
+            "progress": true,
+            "pyramid-d": false,
+            "seed": [
+                21878.45703125,
+                16191.1982421875,
+                43562.51171875
+            ],
+            "snapshot-interval": 1000,
+            "sparse-prefetch-backend": "tensorstore",
+            "subsample-mesh": 4,
+            "subsample-winding": 4,
+            "tifxyz-flow-gate-channels": true,
+            "tifxyz-init": null,
+            "winding-step": 25,
+            "winding-volume": null,
+            "windings": 1,
+            "z-center": 0.0
+        },
+        "base": {
+            "bend": 100.0,
+            "corr": 0.0001,
+            "data": 0.0,
+            "data_plain": 0.0,
+            "ext_offset": 0.0,
+            "normal": 1.0,
+            "pred_dt": 0.001,
+            "smooth": 10.0,
+            "station_n": 0.1,
+            "station_t": 0.1,
+            "step": 10.0,
+            "winding_density": 0.01
+        },
+        "corr_points": {
+            "collections": {
+                "2652": {
+                    "color": [
+                        0.47058823704719543,
+                        0.7058823704719543,
+                        1.0
+                    ],
+                    "metadata": {
+                        "winding_is_absolute": true
+                    },
+                    "name": "same_wrap2466",
+                    "points": {
+                        "110057": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21066.728515625,
+                                14607.427734375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110058": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21103.275390625,
+                                14712.2890625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110059": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21144.390625,
+                                14815.2587890625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110060": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21190.07421875,
+                                14916.3359375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110061": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21231.1875,
+                                15019.306640625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110062": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21263.166015625,
+                                15126.060546875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110063": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21291.58203125,
+                                15234.2900390625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110064": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21331.69140625,
+                                15337.6767578125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110065": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21377.30078125,
+                                15438.78515625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110066": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21420.16015625,
+                                15541.03125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110067": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21472.708984375,
+                                15639.2646484375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110068": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21537.263671875,
+                                15732.525390625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110069": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21600.421875,
+                                15826.365234375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110070": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21665.892578125,
+                                15919.24609375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110071": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21737.82421875,
+                                16009.451171875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110072": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21809.755859375,
+                                16099.6552734375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110073": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21878.45703125,
+                                16191.1982421875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110074": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21943.9296875,
+                                16284.0791015625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110075": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22015.859375,
+                                16374.2841796875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110076": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22087.79296875,
+                                16464.48828125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110077": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22159.72265625,
+                                16554.6953125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110078": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22228.42578125,
+                                16646.23828125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110079": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22293.896484375,
+                                16739.1171875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110080": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22369.05859375,
+                                16827.984375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110081": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22432.650390625,
+                                16921.64453125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110082": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22460.060546875,
+                                17030.291015625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110083": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22422.484375,
+                                17134.7265625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110084": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22353.28515625,
+                                17225.0625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110085": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22258.2265625,
+                                17285.28125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110086": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22158.65625,
+                                17334.599609375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110087": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                22053.8359375,
+                                17371.25,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110088": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21941.40625,
+                                17389.521484375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110089": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21827.08203125,
+                                17403.2265625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110090": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21718.435546875,
+                                17430.63671875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110091": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21609.7890625,
+                                17458.046875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110092": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21499.25,
+                                17480.88671875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110093": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21388.7109375,
+                                17503.73046875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110094": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21280.064453125,
+                                17531.138671875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110095": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21169.52734375,
+                                17553.98046875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110096": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                21057.09375,
+                                17572.25390625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110097": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20940.87890625,
+                                17581.390625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110098": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20822.771484375,
+                                17585.958984375,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110099": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20706.556640625,
+                                17576.822265625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110100": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20588.44921875,
+                                17572.25390625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110101": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20477.765625,
+                                17549.759765625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110102": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20376.85546875,
+                                17503.669921875,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110103": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20277.646484375,
+                                17453.478515625,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        },
+                        "110104": {
+                            "creation_time": 1779684697890,
+                            "p": [
+                                20203.3203125,
+                                17435.205078125,
+                                43562.51171875
+                            ],
+                            "wind_a": 0.0
+                        }
+                    }
+                }
+            }
+        },
+        "lasagna_base_shape_zyx": [
+            75784,
+            32693,
+            32693
+        ],
+        "stages": [
+            {
+                "lr": 0.1,
+                "min_scaledown": 0,
+                "name": "stage0",
+                "params": [
+                    "mesh_ms"
+                ],
+                "steps": 1000,
+                "w_fac": {
+                    "corr": 0.0,
+                    "pred_dt": 0.0,
+                    "station_n": 10.0,
+                    "station_t": 10.0
+                }
+            },
+            {
+                "lr": 0.1,
+                "min_scaledown": 0,
+                "name": "stage1",
+                "params": [
+                    "mesh_ms"
+                ],
+                "steps": 1000,
+                "w_fac": {
+                    "pred_dt": 0.0,
+                    "station_n": 10.0,
+                    "station_t": 10.0
+                }
+            },
+            {
+                "lr": 0.01,
+                "min_scaledown": 0,
+                "name": "stage2",
+                "params": [
+                    "mesh_ms"
+                ],
+                "steps": 500,
+                "w_fac": {
+                    "pred_dt": 0.0,
+                    "station_n": 10.0,
+                    "station_t": 10.0
+                }
+            },
+            {
+                "_lr": [
+                    10.0,
+                    1.0,
+                    0.1,
+                    0.01,
+                    0.001
+                ],
+                "args": {
+                    "pred_dt_flow_gate": {
+                        "anticipatory_pull": {
+                            "_debug_roi_center_xyz": [
+                                17499,
+                                13412,
+                                51144
+                            ],
+                            "debug_roi_k": 8,
+                            "debug_roi_root_min": 0.5,
+                            "debug_roi_tip_max": 0.5,
+                            "debug_slice_upsample": 8,
+                            "enabled": true,
+                            "inlier_one": 120.0,
+                            "inlier_zero": 80.0,
+                            "loss_weight": 2.0,
+                            "samples": 8
+                        },
+                        "backtrack_distance": 50.0,
+                        "debug": false,
+                        "debug_out_dir": "/home/ubuntu/villa/lasagna",
+                        "debug_vis_interval": 0,
+                        "enabled": true,
+                        "gate_factor": 1.0,
+                        "local_boost": 0.5
+                    },
+                    "status_interval": 10
+                },
+                "dlr": [
+                    1.0,
+                    0.1,
+                    0.01,
+                    0.001,
+                    0.0001
+                ],
+                "lr": 1.0,
+                "min_scaledown": 0,
+                "name": "snap",
+                "params": [
+                    "mesh_ms"
+                ],
+                "steps": 500
+            }
+        ],
+        "vc3d_volume_shape_zyx": [
+            18946,
+            8174,
+            8174
+        ]
+    },
+    "format": "tifxyz",
+    "lasagna_base_shape_zyx": [
+        75784,
+        32693,
+        32693
+    ],
+    "lasagna_job": {
+        "config": {
+            "args": {
+                "corr-point-roi": true,
+                "corr-point-roi-init-margin": 80,
+                "corr-point-roi-output-radius": 20,
+                "init-mode": "shell-dir-crop",
+                "mesh-step": 50.0,
+                "model-h": 5000.0,
+                "model-init": "seed",
+                "model-w": 5000.0,
+                "model-w-unit": "voxels",
+                "seed": [
+                    5608.16259765625,
+                    4230.4111328125,
+                    10890.6279296875
+                ],
+                "tifxyz-flow-gate-channels": true,
+                "windings": 1
+            },
+            "base": {
+                "bend": 100.0,
+                "corr": 0.0001,
+                "data": 0.0,
+                "data_plain": 0.0,
+                "ext_offset": 0.0,
+                "normal": 1.0,
+                "pred_dt": 0.001,
+                "smooth": 10.0,
+                "station_n": 0.1,
+                "station_t": 0.1,
+                "step": 10.0,
+                "winding_density": 0.01
+            },
+            "corr_points": {
+                "collections": {
+                    "2652": {
+                        "color": [
+                            0.47058823704719543,
+                            0.7058823704719543,
+                            1.0
+                        ],
+                        "metadata": {
+                            "winding_is_absolute": true
+                        },
+                        "name": "same_wrap2466",
+                        "points": {
+                            "110057": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5266.68212890625,
+                                    3651.85693359375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110058": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5275.81884765625,
+                                    3678.072265625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110059": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5286.09765625,
+                                    3703.814697265625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110060": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5297.5185546875,
+                                    3729.083984375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110061": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5307.796875,
+                                    3754.82666015625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110062": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5315.79150390625,
+                                    3781.51513671875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110063": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5322.8955078125,
+                                    3808.572509765625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110064": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5332.9228515625,
+                                    3834.419189453125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110065": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5344.3251953125,
+                                    3859.6962890625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110066": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5355.0400390625,
+                                    3885.2578125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110067": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5368.17724609375,
+                                    3909.816162109375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110068": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5384.31591796875,
+                                    3933.13134765625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110069": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5400.10546875,
+                                    3956.59130859375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110070": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5416.47314453125,
+                                    3979.8115234375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110071": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5434.4560546875,
+                                    4002.36279296875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110072": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5452.43896484375,
+                                    4024.913818359375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110073": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5469.6142578125,
+                                    4047.799560546875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110074": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5485.982421875,
+                                    4071.019775390625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110075": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5503.96484375,
+                                    4093.571044921875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110076": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5521.9482421875,
+                                    4116.1220703125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110077": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5539.9306640625,
+                                    4138.673828125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110078": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5557.1064453125,
+                                    4161.5595703125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110079": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5573.47412109375,
+                                    4184.779296875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110080": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5592.2646484375,
+                                    4206.99609375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110081": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5608.16259765625,
+                                    4230.4111328125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110082": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5615.01513671875,
+                                    4257.57275390625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110083": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5605.62109375,
+                                    4283.681640625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110084": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5588.3212890625,
+                                    4306.265625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110085": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5564.556640625,
+                                    4321.3203125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110086": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5539.6640625,
+                                    4333.64990234375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110087": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5513.458984375,
+                                    4342.8125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110088": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5485.3515625,
+                                    4347.38037109375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110089": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5456.7705078125,
+                                    4350.806640625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110090": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5429.60888671875,
+                                    4357.6591796875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110091": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5402.447265625,
+                                    4364.51171875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110092": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5374.8125,
+                                    4370.2216796875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110093": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5347.177734375,
+                                    4375.9326171875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110094": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5320.01611328125,
+                                    4382.78466796875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110095": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5292.3818359375,
+                                    4388.4951171875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110096": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5264.2734375,
+                                    4393.0634765625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110097": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5235.2197265625,
+                                    4395.34765625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110098": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5205.69287109375,
+                                    4396.48974609375,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110099": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5176.63916015625,
+                                    4394.20556640625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110100": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5147.1123046875,
+                                    4393.0634765625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110101": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5119.44140625,
+                                    4387.43994140625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110102": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5094.2138671875,
+                                    4375.91748046875,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110103": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5069.41162109375,
+                                    4363.36962890625,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            },
+                            "110104": {
+                                "creation_time": 1779684697890,
+                                "p": [
+                                    5050.830078125,
+                                    4358.80126953125,
+                                    10890.6279296875
+                                ],
+                                "wind_a": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "stages": [
+                {
+                    "lr": 0.1,
+                    "min_scaledown": 0,
+                    "name": "stage0",
+                    "params": [
+                        "mesh_ms"
+                    ],
+                    "steps": 1000,
+                    "w_fac": {
+                        "corr": 0.0,
+                        "pred_dt": 0.0,
+                        "station_n": 10.0,
+                        "station_t": 10.0
+                    }
+                },
+                {
+                    "lr": 0.1,
+                    "min_scaledown": 0,
+                    "name": "stage1",
+                    "params": [
+                        "mesh_ms"
+                    ],
+                    "steps": 1000,
+                    "w_fac": {
+                        "pred_dt": 0.0,
+                        "station_n": 10.0,
+                        "station_t": 10.0
+                    }
+                },
+                {
+                    "lr": 0.01,
+                    "min_scaledown": 0,
+                    "name": "stage2",
+                    "params": [
+                        "mesh_ms"
+                    ],
+                    "steps": 500,
+                    "w_fac": {
+                        "pred_dt": 0.0,
+                        "station_n": 10.0,
+                        "station_t": 10.0
+                    }
+                },
+                {
+                    "_lr": [
+                        10.0,
+                        1.0,
+                        0.1,
+                        0.01,
+                        0.001
+                    ],
+                    "args": {
+                        "pred_dt_flow_gate": {
+                            "anticipatory_pull": {
+                                "_debug_roi_center_xyz": [
+                                    17499,
+                                    13412,
+                                    51144
+                                ],
+                                "debug_roi_k": 8,
+                                "debug_roi_root_min": 0.5,
+                                "debug_roi_tip_max": 0.5,
+                                "debug_slice_upsample": 8,
+                                "enabled": true,
+                                "inlier_one": 120.0,
+                                "inlier_zero": 80.0,
+                                "loss_weight": 2.0,
+                                "samples": 8
+                            },
+                            "backtrack_distance": 50.0,
+                            "debug": false,
+                            "debug_out_dir": "/home/ubuntu/villa/lasagna",
+                            "debug_vis_interval": 0,
+                            "enabled": true,
+                            "gate_factor": 1.0,
+                            "local_boost": 0.5
+                        },
+                        "status_interval": 10
+                    },
+                    "dlr": [
+                        1.0,
+                        0.1,
+                        0.01,
+                        0.001,
+                        0.0001
+                    ],
+                    "lr": 1.0,
+                    "min_scaledown": 0,
+                    "name": "snap",
+                    "params": [
+                        "mesh_ms"
+                    ],
+                    "steps": 500
+                }
+            ]
+        },
+        "linked_surfaces": [],
+        "model": null,
+        "volume_shape_zyx": [
+            18946,
+            8174,
+            8174
+        ]
+    },
+    "model_source": "/tmp/fit_reopt_zjo8vi7h/model_reopt.pt",
+    "scale": [
+        0.07999999821186066,
+        0.07999999821186066
+    ],
+    "tags": {
+        "date_last_modified": "20260614185644539",
+        "reviewed": {
+            "date": "20260604080934273"
+        }
+    },
+    "type": "seg",
+    "uuid": "same_wrap002466_lasagna"
+}
